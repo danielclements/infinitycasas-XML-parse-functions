@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Properties>
+	<!-- BEGIN LOOP -->
+	<Property>
+		<UniquePropertyID>{ID}</UniquePropertyID>
+		<LastUpdateDate>{Date}</LastUpdateDate>
+		<Country>Spain</Country>
+		<Region>Valencia</Region>
+		<Subregion>
+			Orihuela Costa
+		</Subregion>
+		<Town>
+			{property_neighborhood}
+		</Town>
+		<Postcode>{property_zip}</Postcode>
+		<Address>{property_address}</Address>
+		<GeoLocation>
+			<Latitude>[long_str({property_lat})]</Latitude>
+			<Longitude>{property_lng}</Longitude>
+		</GeoLocation>
+		<EnergyRating>
+			<Consumption></Consumption>
+			<Emissions></Emissions>
+		</EnergyRating>
+		<SalePrice>{property_price}</SalePrice>
+		<Currency>EUR</Currency>
+		<PropertyType>{Property Categories}</PropertyType>
+		<NumBedrooms>{property_bedrooms}</NumBedrooms>
+		<NumBathrooms>{property_bathrooms}</NumBathrooms>
+		<Pool>Yes</Pool>
+		<NewBuild>No</NewBuild>
+		<PropertyName>
+			<en>{Property Categories} In {property_neighborhood}</en>
+		</PropertyName>
+		<Introduction>
+			<en>></en>
+		</Introduction>
+		<Description>
+			<en>[desc_html_strip({Content})]></en>
+		</Description>
+		<Features>
+			[features({ID})]
+			<Feature>
+				<en>Garden</en>
+				<fr>Jardin</fr>
+			</Feature>
+		</Features>
+		<surface_area>
+			<built>{property_area}</built>
+			<plot></plot>
+		</surface_area>
+		<Photos>
+			[image({Image URL})]
+		</Photos>
+		<Floorplans>
+			<Floorplan>
+				<FloorplanURL></FloorplanURL>
+				<FloorplanDesc></FloorplanDesc>
+			</Floorplan>
+			<Floorplan>
+				<FloorplanURL></FloorplanURL>
+				<FloorplanDesc></FloorplanDesc>
+			</Floorplan>
+		</Floorplans>
+	</Property>
+	<!-- END LOOP -->
+</Properties>
