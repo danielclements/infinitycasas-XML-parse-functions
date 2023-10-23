@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<kyero>
+		<feed_version>3</feed_version>
+	</kyero>
+	<!-- BEGIN LOOP -->
+	<property>
+		<id>{ID}</id>
+		<date>{Date}</date>
+		<ref>{Kyero Reference Number}</ref>
+		<price>{property_price}</price>
+		<currency>EUR</currency>
+		<price_freq>sale</price_freq>
+		<type>{Property Categories}</type>
+		<location>
+			<latitude>[long_str({property_lat})]</latitude>
+			<longitude>{property_lng}</longitude>
+		</location>
+		<country>Spain</country>
+		<town>{property_neighborhood}</town>
+		<province>Alicante</province>
+		<beds>{property_bedrooms}</beds>
+		<baths>{property_bathrooms}</baths>
+		<pool>1</pool>
+		<desc>
+			<en>[desc_html_strip({Content})]</en>
+		</desc>
+		<features>
+			[featuresKyero({ID})]
+		</features>
+		<images>
+			[imageKyero({Image URL})]
+		</images>
+	</property>
+	<!-- END LOOP -->
+</root>
