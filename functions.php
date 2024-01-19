@@ -14,16 +14,18 @@ function image( $url = null) {
 
 
 function imageKyero( $url = null) {
-	$output = '';
 	$i = 1;
+	$output = '';
+	
 	foreach ( $url as $image ) {
-		
-		$output .= '**LT**image id="' . $i . '"**GT**';
-		$output .= '**LT**url**GT**' . $image . '**LT**/url**GT**';
-		$output .= '**LT**/image**GT**';
-		$i++;
-}
-
+		if ($i <= 50) {
+			$output .= '**LT**image id="' . $i . '"**GT**';
+			$output .= '**LT**url**GT**' . $image . '**LT**/url**GT**';
+			$output .= '**LT**/image**GT**';
+			$i++;
+		}
+	}
+	return $output;
 }
 
 function featuresKyero($id){
